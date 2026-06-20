@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPrep Hub · Interview Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-badge">
+                <span class="rocket">🚀</span>
+                <h1>DevPrep Hub</h1>
+            </div>
+            <p class="subtitle">
+                Developer Interview Companion &mdash; <span>Python · Java · SQL · Git</span>
+            </p>
+            <div class="search-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchBox" placeholder="Search functions, concepts, commands…" autocomplete="off" />
+                <button class="clear-btn" id="clearBtn" aria-label="Clear search">✕</button>
+            </div>
+        </header>
+
+        <div class="buttons">
+            <button class="cat-btn" data-cat="python" onclick="showCategory('python')">
+                <span class="icon">🐍</span> Python
+            </button>
+            <button class="cat-btn" data-cat="java" onclick="showCategory('java')">
+                <span class="icon">☕</span> Java
+            </button>
+            <button class="cat-btn" data-cat="sql" onclick="showCategory('sql')">
+                <span class="icon">🗄</span> SQL
+            </button>
+            <button class="cat-btn" data-cat="git" onclick="showCategory('git')">
+                <span class="icon">🔥</span> Git
+            </button>
+        </div>
+
+        <div id="content">
+            <div class="welcome-card">
+                <span class="emoji-big">🧑‍💻</span>
+                <h2>Welcome to DevPrep Hub</h2>
+                <p>Select a category above or use the search bar to explore Python, Java, SQL, and Git concepts.</p>
+                <div class="tags">
+                    <span>🐍 20+ Python functions</span>
+                    <span>☕ 10 Java concepts</span>
+                    <span>🗄 10 SQL queries</span>
+                    <span>🔥 10 Git commands</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-brand">
+                <span>✨</span>
+                <h3>Vaishnavi Singh</h3>
+            </div>
+            <p class="footer-email">
+                <a href="mailto:vaishnavivasusingh@gmail.com">vaishnavivasusingh@gmail.com</a>
+            </p>
+            <a href="https://digitalheroesco.com" target="_blank" class="digital-btn">
+                ⚡ Built for Digital Heroes
+            </a>
+            <p class="footer-copy">&copy; 2026 DevPrep Hub &mdash; crafted with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
